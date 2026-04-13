@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>mo aboalezz </title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- ── CURSOR ── -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- ── NAV ── -->
+  <nav class="nav" id="navbar">
+    <div class="nav-logo">EZZ<span class="dot">.</span></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="grid-lines"></div>
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div class="hero-content reveal">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for Opportunities
+      </div>
+      <h1 class="hero-name">Mohamed<br/><span class="outline-text">Aboalezz</span></h1>
+      <div class="hero-title">
+        <span class="static-text">&lt; </span>
+        <span class="typed-text" id="typedText"></span>
+        <span class="cursor-blink">|</span>
+        <span class="static-text"> /&gt;</span>
+      </div>
+      <p class="hero-tagline">
+        Engineering scalable .NET systems where clean architecture meets AI-powered intelligence.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">
+          <span>View Projects</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <a href="#contact" class="btn btn-ghost">
+          <span>Contact Me</span>
+        </a>
+        <a href="my CV.pdf" class="btn btn-ghost" download>
+          <span>Download CV</span>
+          <i class="fa-solid fa-download"></i>
+        </a>
+      </div>
+      <div class="hero-scroll">
+        <div class="scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+    </div>
+    <div class="hero-code-panel reveal-right">
+      <div class="code-window">
+        <div class="code-header">
+          <span class="dot-red"></span>
+          <span class="dot-yellow"></span>
+          <span class="dot-green"></span>
+          <span class="code-filename">Developer.cs</span>
+        </div>
+        <pre class="code-body"><span class="c-keyword">public class</span> <span class="c-class">Developer</span>
+{
+  <span class="c-keyword">public string</span> Name <span class="c-op">=</span> <span class="c-str">"Alex Morgan"</span>;
+  <span class="c-keyword">public string</span> Role <span class="c-op">=</span> <span class="c-str">"Full Stack .NET"</span>;
+  <span class="c-keyword">public string</span> Focus <span class="c-op">=</span> <span class="c-str">"AI + Backend"</span>;
+
+  <span class="c-keyword">public</span> List<span class="c-op">&lt;</span><span class="c-class">string</span><span class="c-op">&gt;</span> Stack <span class="c-op">=</span> <span class="c-keyword">new</span>()
+  {
+    <span class="c-str">"ASP.NET Core"</span>,
+    <span class="c-str">"C# / Web API"</span>,
+    <span class="c-str">"SQL Server"</span>,
+    <span class="c-str">"Machine Learning"</span>
+  };
+
+  <span class="c-keyword">public bool</span> OpenToWork <span class="c-op">=</span> <span class="c-bool">true</span>;
+}</pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label reveal">
+        <span class="label-num">01</span>
+        <span class="label-line"></span>
+        <span class="label-text">About Me</span>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-wrap reveal">
+          <div class="about-image-frame">
+            <div class="about-avatar">
+              <img src="img/1.jpeg" alt="Mohamed Aboalezz" class="avatar-img" loading="lazy">
+              <div class="avatar-ring"></div>
+              <div class="avatar-ring ring-2"></div>
+            </div>
+            <div class="image-tag tag-1"><i class="fa-solid fa-code"></i> Backend Dev</div>
+            <div class="image-tag tag-2"><i class="fa-solid fa-brain"></i> AI Student</div>
+            <div class="image-tag tag-3"><i class="fa-solid fa-database"></i> SQL Expert</div>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <h2 class="section-title">Building Systems<br/>That Actually <em>Scale</em></h2>
+          <p>
+            I'm a Full Stack .NET Developer and AI student, passionate about building
+            robust, scalable backend systems that solve real-world problems. My academic
+            journey at the Faculty of Artificial Intelligence has sharpened my analytical
+            thinking and deepened my understanding of how intelligent systems are designed.
+          </p>
+          <p>
+            I specialize in <strong>ASP.NET Core</strong> and <strong>C#</strong> for building
+            high-performance Web APIs, combined with solid database design skills using
+            <strong>SQL Server</strong>. I believe clean architecture is not a luxury —
+            it's a prerequisite for software that endures.
+          </p>
+          <p>
+            Currently seeking internship or junior opportunities where I can contribute
+            meaningful backend solutions while continuing to grow at the intersection
+            of software engineering and AI.
+          </p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-number">10+</span>
+              <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Years Coding</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">AI</span>
+              <span class="stat-label">Faculty Major</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary mt-sm">
+            <span>Let's Talk</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-label reveal">
+        <span class="label-num">02</span>
+        <span class="label-line"></span>
+        <span class="label-text">Skills & Stack</span>
+      </div>
+      <h2 class="section-title centered reveal">My Technical <em>Arsenal</em></h2>
+      <div class="skills-grid">
+
+        <div class="skill-card reveal" data-delay="0">
+          <div class="skill-icon"><i class="fa-solid fa-layer-group"></i></div>
+          <h3>Frontend</h3>
+          <ul class="skill-list">
+            <li><span class="skill-tag">HTML5</span></li>
+            <li><span class="skill-tag">CSS3</span></li>
+            <li><span class="skill-tag">JavaScript</span></li>
+            <li><span class="skill-tag">Bootstrap</span></li>
+          </ul>
+          <div class="skill-bar-group">
+            <div class="skill-bar-item">
+              <span>HTML / CSS</span>
+              <div class="bar"><div class="bar-fill" data-w="88"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <span>JavaScript</span>
+              <div class="bar"><div class="bar-fill" data-w="75"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal" data-delay="100">
+          <div class="skill-icon accent"><i class="fa-solid fa-server"></i></div>
+          <h3>Backend</h3>
+          <ul class="skill-list">
+            <li><span class="skill-tag accent">C#</span></li>
+            <li><span class="skill-tag accent">ASP.NET Core</span></li>
+            <li><span class="skill-tag accent">Web API</span></li>
+            <li><span class="skill-tag accent">REST</span></li>
+          </ul>
+          <div class="skill-bar-group">
+            <div class="skill-bar-item">
+              <span>C# / .NET</span>
+              <div class="bar"><div class="bar-fill accent" data-w="92"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <span>ASP.NET Core</span>
+              <div class="bar"><div class="bar-fill accent" data-w="85"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal" data-delay="200">
+          <div class="skill-icon teal"><i class="fa-solid fa-database"></i></div>
+          <h3>Database</h3>
+          <ul class="skill-list">
+            <li><span class="skill-tag teal">SQL Server</span></li>
+            <li><span class="skill-tag teal">T-SQL</span></li>
+            <li><span class="skill-tag teal">LINQ</span></li>
+            <li><span class="skill-tag teal">Entity Framework</span></li>
+          </ul>
+          <div class="skill-bar-group">
+            <div class="skill-bar-item">
+              <span>SQL Server</span>
+              <div class="bar"><div class="bar-fill teal" data-w="88"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <span>Entity Framework</span>
+              <div class="bar"><div class="bar-fill teal" data-w="80"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal" data-delay="300">
+          <div class="skill-icon purple"><i class="fa-solid fa-tools"></i></div>
+          <h3>Tools</h3>
+          <ul class="skill-list">
+            <li><span class="skill-tag purple">Git</span></li>
+            <li><span class="skill-tag purple">GitHub</span></li>
+            <li><span class="skill-tag purple">Visual Studio</span></li>
+            <li><span class="skill-tag purple">Postman</span></li>
+          </ul>
+          <div class="skill-bar-group">
+            <div class="skill-bar-item">
+              <span>Git / GitHub</span>
+              <div class="bar"><div class="bar-fill purple" data-w="85"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <span>VS / VS Code</span>
+              <div class="bar"><div class="bar-fill purple" data-w="90"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal ai-card" data-delay="400">
+          <div class="skill-icon gold"><i class="fa-solid fa-brain"></i></div>
+          <h3>AI / ML <span class="badge-new">Learning</span></h3>
+          <ul class="skill-list">
+            <li><span class="skill-tag gold">Machine Learning</span></li>
+            <li><span class="skill-tag gold">Python Basics</span></li>
+            <li><span class="skill-tag gold">Data Structures</span></li>
+            <li><span class="skill-tag gold">Algorithms</span></li>
+          </ul>
+          <div class="skill-bar-group">
+            <div class="skill-bar-item">
+              <span>ML Concepts</span>
+              <div class="bar"><div class="bar-fill gold" data-w="65"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <span>Python</span>
+              <div class="bar"><div class="bar-fill gold" data-w="55"></div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-label reveal">
+        <span class="label-num">03</span>
+        <span class="label-line"></span>
+        <span class="label-text">Projects</span>
+      </div>
+      <h2 class="section-title centered reveal">What I've <em>Built</em></h2>
+
+      <!-- Filter Buttons -->
+      <div class="filter-bar reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="dotnet">ASP.NET</button>
+        <button class="filter-btn" data-filter="csharp">C#</button>
+        <button class="filter-btn" data-filter="sql">SQL</button>
+        <button class="filter-btn" data-filter="ai">AI/ML</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <div class="project-card reveal" data-tags="dotnet csharp sql" data-delay="0">
+          <div class="project-media">
+            <img src="https://images.unsplash.com/photo-1557825835-70d97c4aa567?auto=format&fit=crop&w=1200&q=80" alt="E-Commerce API Platform preview" loading="lazy">
+            <div class="project-media-overlay"></div>
+          </div>
+          <div class="project-inner">
+            <div class="project-header">
+              <div class="project-links">
+                
+                <a href="https://vermillion-bublanina-e0244b.netlify.app/" class="project-link" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <h3>Mobile Store Website</h3>
+            <p>A simple website that displays mobile phones, accessories, and services, allowing customers to browse products and easily contact the store or make a purchase..</p>
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JS</span>
+              
+            </div>
+          </div>
+          <div class="project-glow"></div>
+        </div>
+
+        <div class="project-card reveal featured" data-tags="dotnet csharp sql" data-delay="100">
+          <div class="featured-label">Featured</div>
+          <div class="project-media">
+            <img src="img/about-image.jpg" alt="Hospital Management System preview" loading="lazy">
+            <div class="project-media-overlay"></div>
+          </div>
+          <div class="project-inner">
+            <div class="project-header">
+              <div class="project-links">
+                
+                <a href="https://reliable-paprenjak-676469.netlify.app/" class="project-link" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <h3>Restaurant Website</h3>
+            <p>A simple website that showcases a restaurant’s menu, location, and contact details, allowing customers to explore dishes and easily get in touch or visit..</p>
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JS</span>
+              <span>SQL Server</span>
+            </div>
+          </div>
+          <div class="project-glow"></div>
+        </div>
+
+        <div class="project-card reveal" data-tags="ai csharp" data-delay="200">
+          <div class="project-media">
+            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80" alt="Sentiment Analysis Tool preview" loading="lazy">
+            <div class="project-media-overlay"></div>
+          </div>
+          <div class="project-inner">
+            <div class="project-header">
+              <div class="project-links">
+                  <a href="https://warm-nougat-ace1ba.netlify.app/" class="project-link" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div> 
+            </div>
+            <h3>reservation systems in Oman</h3>
+            <p>In creating reservation systems in Oman, we strive to ensure conversations around conservation and economic harmony. This project connects adventurers and nomadic explorers at well-curated campsites, embraces affordable experiences, and instills nature-positive travel habits that protect Oman's pristine desert ecosystems for generations to come..</p>
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JS</span>
+      
+            </div>
+          </div>
+          <div class="project-glow"></div>
+        </div>
+
+        <div class="project-card reveal" data-tags="dotnet csharp sql" data-delay="300">
+          <div class="project-media">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80" alt="Task Management API preview" loading="lazy">
+            <div class="project-media-overlay"></div>
+          </div>
+          <div class="project-inner">
+            <div class="project-header">
+              <div class="project-links">
+                <!-- <a href="#" class="project-link" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="project-link" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+              </div>
+            </div>
+            <h3>Task Management API</h3>
+            <p>RESTful task management backend with user auth, project boards, task assignments and priority management. Includes Swagger docs and unit tests.</p>
+            <div class="project-tech">
+              <span>Web API</span>
+              <span>C#</span>
+              <span>SQL Server</span>
+              <span>Swagger</span>
+            </div>
+          </div>
+          <div class="project-glow"></div>
+        </div>
+
+        <div class="project-card reveal" data-tags="csharp sql" data-delay="400">
+          <div class="project-media">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80" alt="Student Grade Portal preview" loading="lazy">
+            <div class="project-media-overlay"></div>
+          </div>
+          <div class="project-inner">
+            <div class="project-header">
+              <div class="project-links">
+                <!-- <a href="#" class="project-link" title="GitHub"><i class="fa-brands fa-github"></i></a> -->
+              </div>
+            </div>
+            <h3>Student Grade Portal</h3>
+            <p>Desktop application for managing student grades, generating reports, and tracking performance across semesters. Built with WinForms and SQL Server backend.</p>
+            <div class="project-tech">
+              <span>C#</span>
+              <span>WinForms</span>
+              <span>SQL Server</span>
+            </div>
+          </div>
+          <div class="project-glow"></div>
+        </div>
+
+        <div class="project-card reveal" data-tags="ai dotnet" data-delay="500">
+          <div class="project-media">
+            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=1200&q=80" alt="Sales Prediction Dashboard preview" loading="lazy">
+            <div class="project-media-overlay"></div>
+          </div>
+          <div class="project-inner">
+            <div class="project-header">
+              <div class="project-links">
+                <!-- <a href="#" class="project-link" title="GitHub"><i class="fa-brands fa-github"></i></a> -->
+              </div>
+            </div>
+            <h3>Sales Prediction Dashboard</h3>
+            <p>Integrates a regression model with an ASP.NET Core backend to serve predictions via API, displayed on an interactive chart dashboard.</p>
+            <div class="project-tech">
+              <span>ASP.NET Core</span>
+              <span>ML.NET</span>
+              <span>Chart.js</span>
+              <span>AI/ML</span>
+            </div>
+          </div>
+          <div class="project-glow"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- ── EXPERIENCE / EDUCATION ── -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-label reveal">
+        <span class="label-num">04</span>
+        <span class="label-line"></span>
+        <span class="label-text">Experience & Education</span>
+      </div>
+      <h2 class="section-title centered reveal">My <em>Journey</em></h2>
+      <div class="timeline">
+
+        <div class="timeline-item reveal" data-delay="0">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tl-header">
+              <div class="tl-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+              <div>
+                <h3>B.Sc. Artificial Intelligence</h3>
+                <span class="tl-place">Faculty of Artificial Intelligence</span>
+              </div>
+              <span class="tl-date">2021 — Present</span>
+            </div>
+            <p>Studying core AI disciplines including machine learning, data science, neural networks, and algorithm design. The program bridges mathematical foundations with real-world engineering applications.</p>
+            <div class="tl-tags">
+              <span>Machine Learning</span>
+              <span>Data Science</span>
+              <span>Algorithms</span>
+              <span>Neural Networks</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" data-delay="150">
+          <div class="timeline-dot accent"></div>
+          <div class="timeline-card">
+            <div class="tl-header">
+              <div class="tl-icon accent"><i class="fa-solid fa-code"></i></div>
+              <div>
+                <h3>Full Stack .NET Development</h3>
+                <span class="tl-place">Self-Directed Learning & Projects</span>
+              </div>
+              <span class="tl-date">2022 — Present</span>
+            </div>
+            <p>Built and deployed multiple full-stack applications using ASP.NET Core, C#, and SQL Server. Focused on API design, clean architecture, and database optimization through hands-on projects.</p>
+            <div class="tl-tags">
+              <span>ASP.NET Core</span>
+              <span>C#</span>
+              <span>SQL Server</span>
+              <span>Web API</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" data-delay="300">
+          <div class="timeline-dot teal"></div>
+          <div class="timeline-card">
+            <div class="tl-header">
+              <div class="tl-icon teal"><i class="fa-solid fa-laptop-code"></i></div>
+              <div>
+                <h3>Open Source Contributions</h3>
+                <span class="tl-place">GitHub Projects</span>
+              </div>
+              <span class="tl-date">2023 — Present</span>
+            </div>
+            <p>Contributing to open source .NET projects and maintaining personal repositories with well-documented, production-grade code. Focused on REST API design and backend architecture patterns.</p>
+            <div class="tl-tags">
+              <span>Git</span>
+              <span>GitHub</span>
+              <span>Open Source</span>
+              <span>Code Review</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" data-delay="450">
+          <div class="timeline-dot purple"></div>
+          <div class="timeline-card">
+            <div class="tl-header">
+              <div class="tl-icon purple"><i class="fa-solid fa-brain"></i></div>
+              <div>
+                <h3>AI Research Projects</h3>
+                <span class="tl-place">Academic Research — Faculty of AI</span>
+              </div>
+              <span class="tl-date">2023 — Present</span>
+            </div>
+            <p>Coursework and capstone projects applying ML models to practical datasets. Projects included sentiment analysis, image classification, and predictive modeling using Python and ML.NET.</p>
+            <div class="tl-tags">
+              <span>Python</span>
+              <span>ML.NET</span>
+              <span>Research</span>
+              <span>Data Analysis</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-label reveal">
+        <span class="label-num">05</span>
+        <span class="label-line"></span>
+        <span class="label-text">Contact</span>
+      </div>
+      <h2 class="section-title centered reveal">Let's <em>Connect</em></h2>
+      <p class="contact-sub reveal">
+        Open to internships, junior roles, and collaborations.<br/>Don't hesitate to reach out — I respond within 24 hours.
+      </p>
+      <div class="contact-grid">
+
+        <div class="contact-info reveal">
+          <a href="mailto:alex.morgan@email.com" class="contact-card">
+            <div class="contact-card-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <span class="contact-card-label">Email</span>
+              <span class="contact-card-value">   mohamedebrahim24556@email.com</span>
+            </div>
+            <i class="fa-solid fa-arrow-right contact-arrow"></i>
+          </a>
+          <a href="tel:+201234567890" class="contact-card">
+            <div class="contact-card-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <span class="contact-card-label">Phone</span>
+              <span class="contact-card-value">   +201000913380</span>
+            </div>
+            <i class="fa-solid fa-arrow-right contact-arrow"></i>
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="contact-card">
+            <div class="contact-card-icon linkedin"><i class="fa-brands fa-linkedin-in"></i></div>
+            <div>
+              <span class="contact-card-label">LinkedIn</span>
+              <span class="contact-card-value">   linkedin.com/in/mohamed-abualezz</span>
+            </div>
+            <i class="fa-solid fa-arrow-right contact-arrow"></i>
+          </a>
+          <a href="https://github.com" target="_blank" class="contact-card">
+            <div class="contact-card-icon github"><i class="fa-brands fa-github"></i></div>
+            <div>
+              <span class="contact-card-label">GitHub</span>
+              <span class="contact-card-value">   github.com/Mohamedabualezz</span>
+            </div>
+            <i class="fa-solid fa-arrow-right contact-arrow"></i>
+          </a>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" placeholder="Jane Smith" required/>
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="jane@gmail.com" required/>
+          </div>
+          <div class="form-group">
+            <label>Subject</label>
+            <input type="text"  required/>
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea rows="5" placeholder="Tell me about the opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width">
+            <span>Send Message</span>
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+          <div class="form-success" id="formSuccess">
+            <i class="fa-solid fa-circle-check"></i>
+            Message sent successfully! I'll respond within 24 hours.
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">EZZ<span class="dot">.</span></div>
+        <p class="footer-tagline">Full Stack .NET Developer · AI Enthusiast</p>
+        <div class="footer-socials">
+          <a href="https://github.com/Mohamedabualezz" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/mohamed-abualezz" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:alex.mohamedebrahim24556@email.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+     س
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
